@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ffd014;
+  --color-primary-hover: #e6bc12;
+  --color-dark: #333333;
+  --color-dark-light: #292929;
+  --color-light: #ffffff;
+
+  --animate-fade-in: fade-in 0.3s ease-in-out;
+  --animate-slide-up: slide-up 0.4s ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-light text-dark font-sans antialiased;
+    margin: 0;
+    min-height: 100vh;
+  }
+  img {
+    @apply max-w-full h-auto;
+  }
+  a {
+    @apply text-inherit no-underline transition-colors;
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center 
+           px-6 py-3 rounded-full 
+           bg-primary text-dark font-semibold
+           hover:bg-primary-hover 
+           transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center 
+           px-6 py-3 rounded-full 
+           border-2 border-light text-light font-semibold
+           hover:bg-light hover:text-dark
+           transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-light/50;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
