@@ -1,4 +1,5 @@
 import { Header } from "./components/layout/Header";
+import { Hero } from "./sections/Hero/Hero";
 
 /*todo: 
   1. раздел о нас добавить ссылки на АП РБ
@@ -10,7 +11,9 @@ function App() {
     <div className="min-h-screen">
       <Header />
 
-      <main className="pt-20">
+      <main>
+        <Hero />
+
         <section
           className="section-padding min-h-screen flex items-center justify-center bg-gray-100"
           id="about"
@@ -20,9 +23,9 @@ function App() {
 
         <section
           className="section-padding min-h-screen flex items-center justify-center"
-          id="standards"
+          id="standarts"
         >
-          Стандарты
+          <h2 className="text-4xl font-bold text-dark">Стандарты</h2>
         </section>
 
         <section

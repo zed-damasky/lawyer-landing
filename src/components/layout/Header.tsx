@@ -1,6 +1,6 @@
 import { cn } from "@/utils/cn";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navLinks = [
   { label: "О нас", href: "#about" },
@@ -13,11 +13,11 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   //Fix state
-  useState(() => {
-    const handleScroll = () => setScrolled(window.screenY > 50);
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  }, []);
 
   /*todo: 
   1. изменение региона, города в зависимости от места нахождения либо выбора пользователя
@@ -36,8 +36,11 @@ export function Header() {
         {/*Logo*/}
         <a
           href="/"
-          className="text-white text-xl md:text-2x1 font-light tracking-wide hover:text-primary transition-colors"
-        >АДВОКАТЫ В САЛАВАТЕ</a>
+          className="text-white text-xl md:text-2xl font-light tracking-wide hover:text-primary transition-colors"
+        >
+          АДВОКАТЫ В САЛАВАТЕ
+        </a>
+
         {/*desktop menu*/}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map(({ label, href }) => (
@@ -54,15 +57,15 @@ export function Header() {
 
         {/*mobile button */}
         <button
-          className="md:hiden text-white p-2 hover:text-primary transition-colors"
+          className="md:hidden text-white p-2 hover:text-primary transition-colors"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Открыть меню"
         >
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
-      {/* mobile menu */}
 
+      {/* mobile menu */}
       {isMenuOpen && (
         <nav className="md:hidden absolute top-full left-0 right-0 bg-dark-light/95 backdrop-blur-md py-4 px-6 flex flex-col gap-4 shadow-xl animate-slide-up">
           {navLinks.map(({ label, href }) => (
