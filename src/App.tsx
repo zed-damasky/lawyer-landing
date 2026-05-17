@@ -17,13 +17,6 @@ function App() {
         <AboutLawyers />
 
         <section
-          className="section-padding min-h-screen flex items-center justify-center bg-gray-100"
-          id="about"
-        >
-          <h2 className="text-4x1 font-bold text-dark">О нас</h2>
-        </section>
-
-        <section
           className="section-padding min-h-screen flex items-center justify-center"
           id="standarts"
         >
