@@ -1,6 +1,7 @@
 import { Header } from "./components/layout/Header";
 import { AboutLawyers } from "./sections/AboutLawyers/AboutLawyers";
 import { Hero } from "./sections/Hero/Hero";
+import { OfferEndArticles } from "./sections/OfferEndArticles/OfferEndArticles";
 import { Standarts } from "./sections/Standarts/Standarts";
 import { Workflow } from "./sections/Workflow/Workflow";
 
@@ -21,6 +22,7 @@ function App() {
         <AboutLawyers />
         <Standarts />
         <Workflow />
+        <OfferEndArticles/>
 
         <section
           id="contacts"
