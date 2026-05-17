@@ -2,6 +2,8 @@ import { LawyerCard } from "@/components/ui/LawyerCard/LawyerCard";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { lawyers } from "@/data/lawyers";
 
+/* todo:   2. 100vh для секции */
+
 export function AboutLawyers() {
   const sectionRef = useScrollAnimation<HTMLElement>();
 
@@ -9,7 +11,7 @@ export function AboutLawyers() {
     <section
       id="about"
       ref={sectionRef}
-      className="section-padding bg-light animate-on-scroll mb-16"
+      className="section-padding bg-light animate-on-scroll mb-16 scroll-mt-20"
     >
       <div className="container-custom px-4">
         <div className="text-center mb-16 md:mb-24 mt-16">

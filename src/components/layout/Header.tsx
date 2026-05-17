@@ -2,6 +2,12 @@ import { cn } from "@/utils/cn";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
+/*todo: 
+  1. изменение региона, города в зависимости от места нахождения либо выбора пользователя
+  2. может смена языка?
+  3. 
+  */
+
 const navLinks = [
   { label: "О нас", href: "#about" },
   { label: "Стандарты", href: "#standarts" },
@@ -18,12 +24,6 @@ export function Header() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  /*todo: 
-  1. изменение региона, города в зависимости от места нахождения либо выбора пользователя
-  2. может смена языка?
-  3. 
-  */
 
   return (
     <header

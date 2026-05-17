@@ -1,10 +1,12 @@
 import { Header } from "./components/layout/Header";
 import { AboutLawyers } from "./sections/AboutLawyers/AboutLawyers";
 import { Hero } from "./sections/Hero/Hero";
+import { Standarts } from "./sections/Standards/Standards";
 
 /*todo: 
   1. раздел о нас добавить ссылки на АП РБ
   2. контакты - попап с фото входа в офис
+  3. жесткая привязка к якорям, уменьшить жесткость
   */
 
 function App() {
@@ -15,13 +17,7 @@ function App() {
       <main>
         <Hero />
         <AboutLawyers />
-
-        <section
-          className="section-padding min-h-screen flex items-center justify-center"
-          id="standarts"
-        >
-          <h2 className="text-4xl font-bold text-dark">Стандарты</h2>
-        </section>
+        <Standarts />
 
         <section
           id="workflow"
