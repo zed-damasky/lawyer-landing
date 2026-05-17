@@ -1,7 +1,8 @@
 import { Header } from "./components/layout/Header";
 import { AboutLawyers } from "./sections/AboutLawyers/AboutLawyers";
 import { Hero } from "./sections/Hero/Hero";
-import { Standarts } from "./sections/Standards/Standards";
+import { Standarts } from "./sections/Standarts/Standarts";
+
 
 /*todo: 
   1. раздел о нас добавить ссылки на АП РБ
