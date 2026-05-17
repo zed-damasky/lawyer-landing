@@ -1,4 +1,5 @@
 import { Header } from "./components/layout/Header";
+import { AboutLawyers } from "./sections/AboutLawyers/AboutLawyers";
 import { Hero } from "./sections/Hero/Hero";
 
 /*todo: 
@@ -13,6 +14,7 @@ function App() {
 
       <main>
         <Hero />
+        <AboutLawyers />
 
         <section
           className="section-padding min-h-screen flex items-center justify-center bg-gray-100"

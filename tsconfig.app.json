@@ -21,6 +21,9 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
 
+    /*  igrore baseUrl */
+    "ignoreDeprecations": "6.0",
+
     /*Paths*/
     "baseUrl": ".",
     "paths": {
