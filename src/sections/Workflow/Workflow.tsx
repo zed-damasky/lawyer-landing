@@ -8,7 +8,7 @@ export function Workflow() {
     <section
       id="workflow"
       ref={sectionRef}
-      className="pt-20 md:pt-24 pb-16 md:pb-20 bg-light animate-on-scroll min-h-screen"
+      className="pt-20 md:pt-24 pb-16 md:pb-20 bg-light animate-on-scroll "
     >
       <div className="container-custom px-4">
         {/* header */}

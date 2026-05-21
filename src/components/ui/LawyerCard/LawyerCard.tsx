@@ -32,7 +32,7 @@ export function LawyerCard({
             loading="lazy"
             onError={(e) => {
               // Фолбэк на заглушку если фото не загрузилось
-              e.currentTarget.src = ``;
+              e.currentTarget.src = lawyer.imageProfile;
             }}
           />
         </div>
@@ -54,11 +54,14 @@ export function LawyerCard({
       <p className="text-sm text-gray-600 mb-4 max-w-xs">
         {lawyer.workplace}
         <br />
-        <span className="font-medium text-dark">№ {lawyer.regNumber}</span>
+        <span className="font-medium text-dark">
+          Регистрационный номер в реестре адвокатов: {lawyer.regNumber}
+        </span>
       </p>
 
       {/*practices */}
       <ul className="space-y-1.5 text-sm text-gray-700">
+        <strong>Направления практики:</strong>
         {lawyer.practices.map((practice, index) => (
           <li key={index} className="flex items-start gap-2">
             <span className="text-primary mt-1">•</span>

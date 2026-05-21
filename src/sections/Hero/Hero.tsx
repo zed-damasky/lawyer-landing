@@ -10,7 +10,7 @@ export function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden min-h-150">
       {/*background image*/}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{ backgroundImage: "url('/images/background/1.jpg')" }}
       />
       {/* cover shadow */}

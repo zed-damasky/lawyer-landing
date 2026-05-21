@@ -10,7 +10,7 @@ export function OfferEndArticles() {
   return (
     <section
       ref={sectionRef}
-      className="py-16 md:py-24 bg-light animate-on-scroll"
+      className="py-16 md:py-24 bg-light animate-on-scroll snap-end!"
     >
       <div className="container-custom px-4">
         <div className="space-y-16 md:space-y-24">

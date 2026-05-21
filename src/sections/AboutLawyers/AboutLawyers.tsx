@@ -12,7 +12,7 @@ export function AboutLawyers() {
       id="about"
       ref={sectionRef}
       //className="pt-20 md:pt-24 pb-16 md:pb-20 bg-light animate-on-scroll min-h-screen"
-      className="section-padding bg-light animate-on-scroll mb-16 scroll-mt-25"
+      className="section-padding bg-light animate-on-scroll mb-16 scroll-mt-25 min-h-screen"
     >
       <div className="container-custom px-4">
         <div className="text-center mb-16 md:mb-24 mt-16">
