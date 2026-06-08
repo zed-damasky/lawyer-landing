@@ -12,4 +12,7 @@ export interface LawyerCardProps {
   lawyer: Lawyer;
   className?: string;
   animateOnScroll?: boolean;
+  isExpanded?: boolean;
+  onToggle?: () => void;
 }
+

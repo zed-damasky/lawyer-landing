@@ -1,5 +1,5 @@
-import { cn } from "@/utils/cn";
 import type { Lawyer, LawyerCardProps } from "@/types/lawyer";
+import { cn } from "@/utils/cn";
 
 /*
   todo: 
@@ -24,7 +24,7 @@ export function LawyerCard({
     >
       {/* photo */}
       <div className="relative md-6">
-        <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/10 group-hover:border-primary/50 transition-colors">
+        <div className="w-50 h-50 rounded-full overflow-hidden border-4 border-white/10 group-hover:border-primary/50 transition-colors">
           <img
             src={lawyer.photo}
             alt={lawyer.name}

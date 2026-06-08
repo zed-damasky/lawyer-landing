@@ -1,4 +1,5 @@
 import { Header } from "./components/layout/Header";
+import { TestSidePage } from "./components/ui/TestSidePage/TestSidePage";
 import { AboutLawyers } from "./sections/AboutLawyers/AboutLawyers";
 import { Contacts } from "./sections/Contacts/Contacts";
 import { Hero } from "./sections/Hero/Hero";
@@ -24,6 +25,7 @@ function App() {
         <OfferEndArticles />
         <Contacts />
       </main>
+      <TestSidePage />
     </div>
   );
 }
