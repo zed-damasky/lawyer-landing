@@ -17,14 +17,14 @@ export function LawyerCard({
   return (
     <article
       className={cn(
-        "flex flex-col items-center text-center p-6 group",
+        "flex flex-col items-center text-center p-2 group",
         animateOnScroll && "animate-on-scroll",
         className,
       )}
     >
       {/* photo */}
       <div className="relative md-6">
-        <div className="w-50 h-50 rounded-full overflow-hidden border-4 border-white/10 group-hover:border-primary/50 transition-colors">
+        <div className="w-55 h-55 rounded-full overflow-hidden border-4 border-white/10 group-hover:border-primary/50 transition-colors">
           <img
             src={lawyer.photo}
             alt={lawyer.name}
@@ -39,7 +39,7 @@ export function LawyerCard({
       </div>
 
       {/* name */}
-      <h3 className="text-xl font-bold text-dark mb-2 md:text-2xl">
+      <h3 className="text-xl font-bold text-dark mt-4 mb-2 md:text-3xl">
         <span>
           {lawyer.name.split(" ")[0]}
           <br className="hidden sm:block" />
@@ -51,15 +51,33 @@ export function LawyerCard({
       </h3>
 
       {/* workplace & reg num */}
-      <p className="text-sm text-gray-600 mb-4 max-w-xs">
+      <p className="text-xs text-gray-600 mb-2 max-w-xs">
         {lawyer.workplace}
         <br />
-        <span className="font-medium text-dark">
+        <span>
           Регистрационный номер в реестре адвокатов: {lawyer.regNumber}
         </span>
       </p>
 
       {/*practices */}
+      <div className="mt-4">
+        <strong className="block mb-2 text-sm text-gray-700">
+          Основные направления
+        </strong>
+        <div className="flex flex-wrap gap-2 justify-center">
+          {lawyer.practices.map((practice, index) => (
+            <span
+              key={index}
+              className="px-3 py-1.5 bg-primary/20 text-dark text-xs rounded-full transition-colors hover:bg-primary-hover/60"
+              
+            >
+              {practice}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* 
       <ul className="space-y-1.5 text-sm text-gray-700">
         <strong>Направления практики:</strong>
         {lawyer.practices.map((practice, index) => (
@@ -69,6 +87,7 @@ export function LawyerCard({
           </li>
         ))}
       </ul>
+      */}
     </article>
   );
 }
