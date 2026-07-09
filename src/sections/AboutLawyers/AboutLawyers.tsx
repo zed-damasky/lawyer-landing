@@ -19,7 +19,7 @@ export function AboutLawyers() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto relative">
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-gray-300 to-transparent" />
           {lawyers.map((lawyer) => (
             <LawyerCard key={lawyer.id} lawyer={lawyer} />
           ))}
