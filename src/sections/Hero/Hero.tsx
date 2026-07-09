@@ -1,8 +1,3 @@
-/*todo: 
-  1. пулл фраз для контента
-  2. при мобильном виде изображение двигать влево, а не месштаб в центр
-  */
-
 import { ChevronDown } from "lucide-react";
 
 export function Hero() {

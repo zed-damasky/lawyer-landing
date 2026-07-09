@@ -1,5 +1,5 @@
 export interface ContactInfo {
-  phone: string;
+  phones: string[];
   email: string;
   address: string;
   coordinates: [number, number];

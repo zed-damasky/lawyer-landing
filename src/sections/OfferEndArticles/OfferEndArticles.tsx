@@ -2,8 +2,6 @@ import { offerEndArticles } from "@/data/offerEndArticles";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import type { OfferEndArticle } from "@/types/offerEndArticle";
 
-// todo: согласовать флекс/грид
-
 export function OfferEndArticles() {
   const sectionRef = useScrollAnimation<HTMLElement>();
 

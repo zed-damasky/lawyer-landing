@@ -3,8 +3,6 @@ import { MapComponent } from "@/components/ui/MapComponent/MapComponent";
 import { contactInfo, socialLinks } from "@/data/contacts";
 import { SocialIcon } from "@/components/ui/SocialIcon/SocialIcon";
 
-//todo: обратная связь?
-
 export function Contacts() {
   const sectionRef = useScrollAnimation<HTMLElement>();
 
@@ -37,14 +35,16 @@ export function Contacts() {
               </h2>
 
               <div className="space-y-5 mb-10">
-                <p className="text-xl md:text-2xl font-medium">
-                  <a
-                    href={`tel:${contactInfo.phone.replace(/\D/g, "")}`}
-                    className="text-white hover:text-primary transition-colors"
-                  >
-                    {contactInfo.phone}
-                  </a>
-                </p>
+                {contactInfo.phones.map((phone, index) => (
+                  <p key={index} className="text-xl md:text-2xl font-medium">
+                    <a
+                      href={`tel:${phone.replace(/\D/g, "")}`}
+                      className="text-white hover:text-primary transition-colors"
+                    >
+                      {phone}
+                    </a>
+                  </p>
+                ))}
                 <p className="text-lg">
                   <a
                     href={`mailto:${contactInfo.email}`}

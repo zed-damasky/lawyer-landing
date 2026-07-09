@@ -1,13 +1,5 @@
-import type { Lawyer, LawyerCardProps } from "@/types/lawyer";
+import type { LawyerCardProps } from "@/types/lawyer";
 import { cn } from "@/utils/cn";
-
-/*
-  todo: 
-  1. добавить заглушку на фото
-
-  3. доп информация при наведении на карточку? награды грамоты и т.д.? попап?
-
-*/
 
 export function LawyerCard({
   lawyer,
@@ -69,7 +61,6 @@ export function LawyerCard({
             <span
               key={index}
               className="px-3 py-1.5 bg-primary/20 text-dark text-xs rounded-full transition-colors hover:bg-primary-hover/60"
-              
             >
               {practice}
             </span>

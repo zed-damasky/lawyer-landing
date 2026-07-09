@@ -3,6 +3,6 @@ export interface OfferEndArticle {
   title: string;
   text: string;
   image: string;
-  imageAlt: string;
+  imageAlt?: string;
   reverse: boolean;
 }
