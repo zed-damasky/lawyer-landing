@@ -81,6 +81,7 @@ const TelegramIcon = ({ className = "", fill = "currentColor" }: IconProps) => (
   </svg>
 );
 
+/*
 const WebIcon = ({ className = "", fill = "currentColor" }: IconProps) => (
   <svg
     viewBox="0 0 128 128"
@@ -97,4 +98,4 @@ const WebIcon = ({ className = "", fill = "currentColor" }: IconProps) => (
       id="path2"
     />
   </svg>
-);
+);*/

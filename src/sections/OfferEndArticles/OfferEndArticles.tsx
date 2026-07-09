@@ -13,10 +13,7 @@ export function OfferEndArticles() {
       <div className="container-custom px-4">
         <div className="space-y-16 md:space-y-24">
           {offerEndArticles.map(
-            (
-              { id, title, text, image, imageAlt, reverse }: OfferEndArticle,
-              index,
-            ) => (
+            ({ id, title, text, image, reverse }: OfferEndArticle) => (
               <article
                 key={id}
                 className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center ${
