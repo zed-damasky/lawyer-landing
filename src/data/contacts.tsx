@@ -2,7 +2,7 @@ import type { ContactInfo, SocialLink } from "@/types/contact";
 
 export const contactInfo: ContactInfo = {
   phones: ["+7 (987) 568-90-16", "+7 (987) 498-24-07"],
-  email: "info@advokat-salavat.ru",
+  email: "",
   address: "ул. Губкина 11/87, Салават, Республика Башкортостан",
   coordinates: [53.3473985, 55.951938],
 };
