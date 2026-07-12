@@ -13,19 +13,19 @@ export const socialLinks: SocialLink[] = [
   {
     id: "max",
     name: "MAX",
-    url: "https://max.ru/advokat",
+    url: "https://max.ru/",
     renderIcon: (props) => <MaxIcon {...props} />,
   },
   {
     id: "whatsapp",
     name: "WhatsApp",
-    url: "https://wa.me/79001234567",
+    url: "https://wa.me/79874982407",
     renderIcon: (props) => <WhatsAppIcon {...props} />,
   },
   {
     id: "telegram",
     name: "Telegram",
-    url: "https://t.me/advokat_salavat",
+    url: "https://t.me/appr_company",
     renderIcon: (props) => <TelegramIcon {...props} />,
   },
   /*
