@@ -2,7 +2,7 @@ import type { ContactInfo, SocialLink } from "@/types/contact";
 
 export const contactInfo: ContactInfo = {
   phones: ["+7 (987) 568-90-16", "+7 (987) 498-24-07"],
-  email: "",
+  email: "ponkin1968@ya.ru",
   address: "ул. Губкина 11/87, Салават, Республика Башкортостан",
   coordinates: [53.3473985, 55.951938],
 };
@@ -13,7 +13,7 @@ export const socialLinks: SocialLink[] = [
   {
     id: "max",
     name: "MAX",
-    url: "https://max.ru/",
+    url: "https://max.ru/u/f9LHodD0cOJ9uJYg8yqhlGF9qA7D5cp_VQjzo99ciV_Jnx2xZ8tIWUXzoNM",
     renderIcon: (props) => <MaxIcon {...props} />,
   },
   {
@@ -22,6 +22,7 @@ export const socialLinks: SocialLink[] = [
     url: "https://wa.me/79874982407",
     renderIcon: (props) => <WhatsAppIcon {...props} />,
   },
+  /*
   {
     id: "telegram",
     name: "Telegram",
