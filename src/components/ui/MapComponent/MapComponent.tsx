@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import maplibregl, { type LngLatLike, type Map } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import type { MapProps } from "@/types/mapComponent";
+import type { MapProps } from "@/typesAndInterfaces/mapComponent";
 
 export function MapComponent({
   center,

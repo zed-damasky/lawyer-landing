@@ -61,7 +61,6 @@ body::-webkit-scrollbar {
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
   }
   body {
     @apply bg-light text-dark font-sans antialiased;
@@ -80,11 +79,6 @@ body::-webkit-scrollbar {
     background: none;
     padding: 0;
     font: inherit;
-  }
-
-  section[id] {
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
   }
 }
 
@@ -115,14 +109,12 @@ body::-webkit-scrollbar {
 @layer utilities {
   .animate-on-scroll {
     opacity: 0;
-    /*transform: translateY(24px);*/
     transition:
       opacity 0.6s ease-out,
       transform 0.6s ease-out;
   }
   .animate-on-scroll.visible {
     opacity: 1;
-    /*transform: translateY(0);*/
   }
 
   [class*="animation-delay"] {
@@ -162,40 +154,26 @@ body::-webkit-scrollbar {
   }
 }
 
-/*
-.global-scaler {
-  zoom: 0.25;
-  transform-origin: 0 0;
-  width: 100%;
-  min-height: 100vh;
-
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
-*/
-/*
-@layer components {
-  .maplibregl-popup {
-    max-width: 100% !important;
+@media (min-width: 768px) {
+  html {
+    scroll-snap-type: y proximity;
+    /*scroll-padding-top: 1vh;***/
   }
 
-  .maplibregl-popup-content {
-    max-width: 100% !important;
-    width: 100% !important;
-    padding: 0 !important;
-        padding-top: 3vh !important;
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-
-
-  .maplibregl-popup-tip {
-    display: none !important;
+  section[id] {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
   }
 }
-*/
+
+@media (max-width: 767px) {
+  html {
+    scroll-snap-type: none !important;
+  }
+  section[id] {
+    scroll-snap-align: none !important;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+}

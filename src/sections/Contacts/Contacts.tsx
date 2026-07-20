@@ -16,7 +16,7 @@ export function Contacts() {
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* map */}
 
-          <div className="relative h-100 lg:h-screen w-full">
+          <div className="order-2 lg:order-1 relative h-100 lg:h-screen w-full">
             <MapComponent
               center={contactInfo.coordinates}
               title={contactInfo.address}
@@ -26,7 +26,7 @@ export function Contacts() {
           </div>
 
           {/* contacts */}
-          <div className="flex flex-col justify-center px-6 py-12 lg:px-16 lg:py-24 w-full">
+          <div className="order-1 lg:order-2 flex flex-col justify-center px-6 py-24 lg:px-16 w-full">
             <div className="max-w-lg mx-auto lg:mx-0">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
                 Свяжитесь с нами
@@ -76,7 +76,11 @@ export function Contacts() {
                   </a>
                 ))}
               </div>
-
+              {/* 
+              <div className="">
+                здесь будут инструменты для поисказдесь будут инструменты для поисказдесь будут инструменты для поисказдесь будут инструменты для поисказдесь будут инструменты для поисказдесь будут инструменты для поисказдесь будут инструменты для поисказдесь будут инструменты для поисказдесь будут инструменты для поиска
+              </div>
+           */}
               {/* 
               <button
                 type="button"

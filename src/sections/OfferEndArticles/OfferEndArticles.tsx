@@ -1,6 +1,6 @@
 import { offerEndArticles } from "@/data/offerEndArticles";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import type { OfferEndArticle } from "@/types/offerEndArticle";
+import type { OfferEndArticle } from "@/typesAndInterfaces/offerEndArticle";
 
 export function OfferEndArticles() {
   const sectionRef = useScrollAnimation<HTMLElement>();
@@ -8,7 +8,7 @@ export function OfferEndArticles() {
   return (
     <section
       ref={sectionRef}
-      className="py-16 md:py-24 bg-light animate-on-scroll snap-end!"
+      className="py-16 md:py-24 bg-light animate-on-scroll snap-end! mobile-hidden"
     >
       <div className="container-custom px-4">
         <div className="space-y-16 md:space-y-24">
@@ -22,18 +22,6 @@ export function OfferEndArticles() {
                     : ""
                 }`}
               >
-                {/* flex V
-              <article
-                key={id}
-                className={`flex flex-col md:flex-row gap-8 md:gap-12 items-center ${
-                  reverse ? "md:flex-row-reverse" : ""
-                }`}
-                style={{
-                  opacity: 0,
-                  animation: "fade-in 0.6s ease-out forwards",
-                  animationDelay: `${index * 200}ms`,
-                }}
-              >*/}
                 {/* image */}
                 <div className="relative aspect-600/560 w-full max-w-lg mx-auto md:mx-0 overflow-hidden rounded-2xl shadow-lg">
                   <div

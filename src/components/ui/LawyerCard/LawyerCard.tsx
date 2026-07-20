@@ -1,4 +1,4 @@
-import type { LawyerCardProps } from "@/types/lawyer";
+import type { LawyerCardProps } from "@/typesAndInterfaces/lawyer";
 import { cn } from "@/utils/cn";
 
 export function LawyerCard({

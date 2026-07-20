@@ -1,4 +1,4 @@
-import type { OfferEndArticle } from "@/types/offerEndArticle";
+import type { OfferEndArticle } from "@/typesAndInterfaces/offerEndArticle";
 
 export const offerEndArticles: OfferEndArticle[] = [
   {

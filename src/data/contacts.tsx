@@ -1,4 +1,4 @@
-import type { ContactInfo, SocialLink } from "@/types/contact";
+import type { ContactInfo, SocialLink } from "@/typesAndInterfaces/contact";
 
 export const contactInfo: ContactInfo = {
   phones: ["+7 (987) 568-90-16", "+7 (987) 498-24-07"],

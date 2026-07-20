@@ -1,4 +1,4 @@
-import type { Lawyer } from "@/types/lawyer";
+import type { Lawyer } from "@/typesAndInterfaces/lawyer";
 /*
   todo: парсер и отдельные json на каждого?
 */

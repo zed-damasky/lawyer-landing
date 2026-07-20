@@ -6,7 +6,7 @@ export function Standarts() {
 
   return (
     <section
-      className="relative section-padding flex items-center animate-on-scroll overflow-hidden min-h-screen"
+      className="relative flex items-center animate-on-scroll overflow-hidden min-h-screen py-25"
       id="standarts"
       ref={sectionRef}
     >

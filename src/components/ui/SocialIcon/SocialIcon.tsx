@@ -1,4 +1,4 @@
-import type { SocialIconProps } from "@/types/socialIcon";
+import type { SocialIconProps } from "@/typesAndInterfaces/socialIcon";
 import { cn } from "@/utils/cn";
 
 export function SocialIcon({ renderIcon, className }: SocialIconProps) {

@@ -1,4 +1,4 @@
-import type { Standart } from "@/types/standart";
+import type { Standart } from "@/typesAndInterfaces/standart";
 import { GraduationCap, ShieldCheck, Scale } from "lucide-react";
 
 export const standarts: Standart[] = [
