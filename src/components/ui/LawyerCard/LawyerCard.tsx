@@ -67,18 +67,6 @@ export function LawyerCard({
           ))}
         </div>
       </div>
-
-      {/* 
-      <ul className="space-y-1.5 text-sm text-gray-700">
-        <strong>Направления практики:</strong>
-        {lawyer.practices.map((practice, index) => (
-          <li key={index} className="flex items-start gap-2">
-            <span className="text-primary mt-1">•</span>
-            <span>{practice}</span>
-          </li>
-        ))}
-      </ul>
-      */}
     </article>
   );
 }

@@ -6,10 +6,6 @@ import { OfferEndArticles } from "./sections/OfferEndArticles/OfferEndArticles";
 import { Standarts } from "./sections/Standarts/Standarts";
 import { Workflow } from "./sections/Workflow/Workflow";
 
-/*todo: 
-  2. контакты - попап с фото входа в офис, актуальный
-  */
-
 function App() {
   return (
     <div className="min-h-screen">
