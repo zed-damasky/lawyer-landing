@@ -13,40 +13,6 @@
 - **Иконки:** [Lucide React](https://lucide.dev/), кастомные иконки для социальных сетей
 - **Карты:** [MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/) (открытая альтернатива YandexMaps)
 
-## Быстрый старт
-
-Для запуска проекта локально потребуется [Node.js](https://nodejs.org/) (рекомендуется версия 18+).
-
-### 1. Клонирование репозитория
-```bash
-git clone https://github.com/zed-damasky/lawyer-landing.git
-cd lawyer-landing
-```
-
-### 2. Установка зависимостей
-```bash
-npm install
-# или
-pnpm install
-# или
-yarn install
-```
-
-### 3. Запуск в режиме разработки
-```bash
-npm run dev
-```
-Приложение будет доступно по адресу http://localhost:5173
-
-## Сборка для продакшена
-Чтобы собрать оптимизированную версию сайта для деплоя:
-```bash
-npm run build
-```
-Для локального предпросмотра собранной версии:
-```bash
-npm run preview
-```
 ## Результат
 ### https://адвокат.website 
 
