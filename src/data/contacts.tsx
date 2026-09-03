@@ -26,7 +26,7 @@ export const socialLinks: SocialLink[] = [
   {
     id: "telegram",
     name: "Telegram",
-    url: "https://t.me/appr_company",
+    url: "https://t.me/",
     renderIcon: (props) => <TelegramIcon {...props} />,
   },
   /*
