@@ -22,7 +22,7 @@ export const socialLinks: SocialLink[] = [
     url: "https://wa.me/79874982407",
     renderIcon: (props) => <WhatsAppIcon {...props} />,
   },
-  
+  /*
   {
     id: "telegram",
     name: "Telegram",
