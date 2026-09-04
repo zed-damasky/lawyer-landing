@@ -7,7 +7,7 @@ export const lawyers: Lawyer[] = [
   {
     id: "ponkin",
     name: "Понкин  Сергей Анатольевич",
-    photo: "/images/lawyers/ponkin.png",
+    photo: "/images/lawyers/ponkin.webp",
     imageProfile: "/images/lawyers/profileImage/male_opt.svg",
     workplace:
       "Адвокат Башкирской республиканской коллегии адвокатов (Ишимбайский городской филиал)",
@@ -23,7 +23,7 @@ export const lawyers: Lawyer[] = [
   {
     id: "iambulatova",
     name: "Ямбулатова  Ниля Марсовна",
-    photo: "/images/lawyers/iambulatova.png",
+    photo: "/images/lawyers/iambulatova.webp",
     imageProfile: "/images/lawyers/profileImage/female_opt.svg",
     workplace:
       "Адвокат Башкирской республиканской коллегии адвокатов (Ишимбайский городской филиал)",

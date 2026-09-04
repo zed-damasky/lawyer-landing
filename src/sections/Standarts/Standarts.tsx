@@ -13,7 +13,7 @@ export function Standarts() {
       {/*background image*/}
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/images/background/2.jpg')" }}
+        style={{ backgroundImage: "url('/images/background/2.webp')" }}
       />
 
       {/* cover shadow */}

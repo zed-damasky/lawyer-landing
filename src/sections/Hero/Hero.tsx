@@ -6,7 +6,7 @@ export function Hero() {
       {/*background image*/}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
-        style={{ backgroundImage: "url('/images/background/1.jpg')" }}
+        style={{ backgroundImage: "url('/images/background/1.webp')" }}
       />
       {/* cover shadow */}
       <div className="absolute inset-0 bg-linear-to-b from-black/80 to-black/80"></div>
